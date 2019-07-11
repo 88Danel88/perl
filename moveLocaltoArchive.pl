@@ -4,8 +4,8 @@ use warnings;
 use File::Copy;
 use Time::Piece;
 
-my $dir1 		= "C:/Users/fg8tzv/eclipse-workspace/CIM_Tech_Perl2/directory1"; #will be replaced with LocalStorage
-my $dir2 		= "C:/Users/fg8tzv/eclipse-workspace/CIM_Tech_Perl2/directory2"; #will be replaced with Archive
+my $dir1 		= "./directory1"; #will be replaced with LocalStorage
+my $dir2 		= "./directory2"; #will be replaced with Archive
 my $date 		= localtime->strftime('%m%d%Y'); 								 #string format time , current month day year with no spaces
 my $archive 	= "$dir2/$date"; 												 #folder in dir2 named with current month day year
 my $killDcc     = 'taskkill /IM "Calculator.exe" /F'; 							 #will be replaced with DCC
